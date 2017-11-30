@@ -1,0 +1,137 @@
+
+
+
+header {
+  min-height: 150px;
+  text-align: center;
+  background-color: #BBD9EE;
+
+}
+
+header h1{
+    font-size: 55px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#main h3 {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+
+
+#main {
+  text-align: center;
+  min-height: 350px;
+}
+
+.col-md-4, .col-md-2{
+  padding: 25px;
+}
+
+
+.input {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+#add-item {
+  width: 180px;
+}
+
+
+#quantity {
+  width: 100px;
+}
+
+#price {
+  width: 100px;
+}
+
+#thumbs-up {
+  font-size: 45px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#thumbs-up:hover{
+  cursor: pointer;
+}
+
+
+#item-list {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+#item-list h2{
+  font-size: 40px;
+}
+
+
+
+#well {
+  font-size: 20px;
+  width: 400px;
+  height: 15px;
+  background-color: #54A4DE;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+
+}
+
+#well-heading{
+  font-size: 30px;
+  position: relative;
+  bottom: 20px;
+
+}
+
+#well:hover{
+  background-color: #FFAB35;
+}
+
+
+
+#bottom {
+  background-color: #BBD9EE;
+  min-height: 200px;
+
+}
+
+
+#removal-tip{
+  display: none;
+}
+
+
+.warning{
+  font-size: 15px;
+  margin-top: 8px;
+
+}
+
+
+
+#cost {
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+  height: 100px;
+  background-color: #BBD9EE;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}

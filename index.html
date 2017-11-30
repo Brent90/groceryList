@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+  <h1>Grocery List</h1>
+</div>
+</header>
+
+
+<section id="main">
+  <div class="container">
+  <form>
+    <div class="row">
+
+      <div class="col-md-4">
+          <h3>Add Item</h3>
+          <input type="text" placeholder="Item" onfocus="this.value=''"  class="input" id="add-item"  required>
+          <div id="item-warning" class="warning">
+
+          </div>
+
+      </div>
+
+      <div class="col-md-2" >
+        <h3>Quantity</h3>
+        <input type="number" class="input" id="quantity" value="1" onfocus="this.value='1'" >
+        <div id="quantity-warning" class="warning">
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-2" >
+        <h3>Price</h3>
+        <input type="number" placeholder="0" class="input" id="price" onfocus="this.value=''" >
+        <div id="price-warning" class="warning">
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-4">
+        <h3>Add to List</h3>
+        <i class="fa fa-thumbs-up" class="input" id="thumbs-up"></i>
+      </div>
+
+    </div>
+  </form>
+
+    <div id="item-list">
+      <h2>LIST:</h2>
+
+      <div id="removal-tip">
+          <h4>Double Click To Remove Item </h4>
+      </div>
+
+      <div id="list-output">
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+</section>
+
+
+
+
+<section id="bottom">
+  <div class="container">
+      <div id="cost">
+        <h2>Total Cost:</h2>
+        <h3 id="total-cost">$0.00</h3>
+      </div>
+  </div>
+</section>
+
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
