@@ -12,9 +12,10 @@
 listArray = [];
 
 
-var totalCost = 0;
+//var totalCost = 0;
 
 function addItem() {
+
 
   var item = document.getElementById('add-item').value;
   var quantity = document.getElementById('quantity').value;
@@ -25,6 +26,11 @@ function addItem() {
     itemWarning.innerHTML = 'Please Fillout Field';
     quantityWarning.innerHTML = " ";
     priceWarning.innerHTML= " ";
+
+  }else if(item === ""  && quantity == 0 && price > 0  || item ===""){
+      itemWarning.innerHTML = 'Please Fillout Field';
+      quantityWarning.innerHTML = " Quantity Must Be Greater Than Zero ";
+      priceWarning.innerHTML= " ";
 
   }else if(quantity <= 0 && item !== "" && price > 0 || quantity <0) {
     quantityWarning.innerHTML = 'Quantity Must Be Greater Than Zero';
@@ -109,7 +115,7 @@ minusCost(listArray);
 
 
 function cost(price, quantity) {
-
+var totalCost = 0
 
   var cost = document.getElementById('total-cost');
 
@@ -120,13 +126,17 @@ function cost(price, quantity) {
   else{
 
   for(var i =0; i < listArray.length; i++){
-    if(listArray[i].price === price && listArray[i].quantity === quantity){
-    totalCost = parseFloat(totalCost) + parseFloat(listArray[i].quantity)*parseFloat(listArray[i].price);
-   }
+
+
+    totalCost += (parseFloat(listArray[i].quantity)*parseFloat(listArray[i].price));
+
+
+
   }
 }
 
   cost.innerHTML = '$' + totalCost;
+
 
 }
 
@@ -136,7 +146,6 @@ function minusCost(listArray) {
 
   var cost = document.getElementById('total-cost');
   totalCost = 0;
-
 
 
 
